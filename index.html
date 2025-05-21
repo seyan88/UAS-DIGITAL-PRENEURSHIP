@@ -161,41 +161,45 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient text-white py-20 md:py-32">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center">
+    <section
+      id="home"
+      class="hero-gradient text-white py-20 md:py-32 bg-cover bg-center relative"
+      style="background-image: url('./jpw media.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+      <!-- Overlay untuk teks lebih terlihat -->
+      <div class="container mx-auto px-6 relative z-10">
+        <div
+          class="flex flex-col justify-center items-center text-center md:text-left h-full"
+        >
           <div class="md:w-1/2 mb-12 md:mb-0">
             <h1
-              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-center"
             >
               Jasa Pembuatan
               <span class="text-blue-200">Website & SEO</span> Pekanbaru
               Profesional
             </h1>
-            <p class="text-xl md:text-2xl mb-8 text-blue-100">
+            <p class="text-xl md:text-2xl mb-8 text-blue-100 text-center">
               Website Dijamin Cepat, SEO & Mobile-Friendly, dan Tampil di
               Halaman Pertama Google!
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 target="_blank"
                 href="https://wa.me/6281365036634"
                 class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 text-center"
-                ><i class="fab fa-whatsapp"></i> Mau Konsultasi</a
               >
+                <i class="fab fa-whatsapp"></i> Mau Konsultasi
+              </a>
               <a
                 href="#services"
                 class="bg-transparent hover:bg-blue-700 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105 text-center"
-                >Layanan Jasa</a
               >
+                Layanan Jasa
+              </a>
             </div>
-          </div>
-          <div class="md:w-1/2">
-            <img
-              src="./jpw media.jpg"
-              alt="Web development"
-              class="rounded-xl shadow-2xl"
-            />
           </div>
         </div>
       </div>
