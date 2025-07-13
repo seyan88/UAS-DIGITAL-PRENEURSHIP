@@ -43,6 +43,4 @@ Dapatkan update & tips digital marketing di media sosial kami:
 * **Facebook:** [BikininAja](https://web.facebook.com/riauwebhost)
 * **Twitter/X:** [@BikininAja](https://x.com/riauwebhost)
 
----
 
-Kalau ingin versi Markdown/HTML-nya langsung, tinggal bilang ya!
