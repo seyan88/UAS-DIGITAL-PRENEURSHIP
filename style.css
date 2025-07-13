@@ -1,10 +1,11 @@
+/* Monochrome Color Scheme */
 .hero-gradient {
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #333 0%, #000 100%); /* Dark gradient */
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-item {
@@ -21,7 +22,7 @@
 }
 
 .portfolio-overlay {
-  background: rgba(37, 99, 235, 0.9);
+  background: rgba(51, 51, 51, 0.9); /* Dark overlay */
   transition: all 0.3s ease;
   opacity: 0;
 }
@@ -39,35 +40,35 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(30, 64, 175, 0.95);
+  background: rgba(0, 0, 0, 0.95); /* Dark background */
   z-index: 100;
-  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .call-button {
-  background: linear-gradient(135deg, #0b9835 0%, #059669 100%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #444 0%, #666 100%); /* Monochrome gradient */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .call-button:hover {
-  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  background: linear-gradient(135deg, #666 0%, #888 100%); /* Lighter monochrome gradient */
 }
 
 .active-service {
-  background-color: #2563eb;
+  background-color: #444; /* Darker background for active service */
   color: white;
 }
 
 .nav-link:hover {
-  color: #93c5fd;
+  color: #aaa; /* Light gray on hover */
 }
 
 .input-focus:focus {
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.3); /* Monochrome focus shadow */
 }
 
 .whatsapp-bg {
-  background: linear-gradient(135deg, #0b9835 0%, #059669 100%);
+  background: linear-gradient(135deg, #444 0%, #666 100%); /* Monochrome gradient */
 }
 
 .whatsapp-float {
@@ -80,12 +81,66 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    box-shadow: 0 0 0 0 rgba(51, 51, 51, 0.7);
   }
   70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-  }
+    box-shadow: 0 0 0 15px rgba(51, 51, 51, 0);
+  }/* Service Pricing Section */
+#service-pricing {
+  padding: 20px 0;
+}
+
+.service-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.service-card h3 {
+  font-size: 1.5rem; /* Larger title */
+  margin-bottom: 10px; /* Spacing below title */
+}
+
+.service-card p {
+  font-size: 1.25rem; /* Larger price text */
+  font-weight: bold; /* Bold price text */
+  margin-bottom: 10px; /* Spacing below price */
+}
+
+.service-card ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 10px 0; /* Margin above and below the list */
+}
+
+.service-card li {
+  padding: 5px 0; /* Spacing between list items */
+  font-size: 1rem; /* Standard font size for list items */
+}
+
+.service-card a {
+  display: inline-block; /* Make the button a block */
+  margin-top: 10px; /* Space above the button */
+  padding: 10px 15px; /* Button padding */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 5px; /* Rounded corners for button */
+  text-align: center; /* Center the text in the button */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.service-card a:hover {
+  background-color: #0056b3; /* Darker button on hover */
+}
+
   100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 0 rgba(51, 51, 51, 0);
   }
 }

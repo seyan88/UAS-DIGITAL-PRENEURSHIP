@@ -42,25 +42,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Service selection scroll to contact form
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById("contact").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
 // Form submission
 document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault(); // Mencegah form dari reload halaman
+  e.preventDefault(); // Prevent the form from reloading the page
 
-  // Tangkap nilai dari input
+  // Capture the values from the input
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const service = document.getElementById("service").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  // Format pesan
+  // Format the message
   const whatsappMessage = `Halo! Saya ingin konsultasi dengan detail berikut:\n\nNama: ${name}\nEmail: ${email}\nNo HP: ${phone}\nLayanan: ${service}\nPesan: ${message}`;
 
-  // Encode URL untuk WhatsApp
+  // Encode URL for WhatsApp
   const encodedMessage = encodeURIComponent(whatsappMessage);
-  const whatsappNumber = "6281365036634";
+  const whatsappNumber = "081214827379"; // Updated WhatsApp number
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
-  // Arahkan ke WhatsApp
+  // Redirect to WhatsApp
   window.open(whatsappURL, "_blank");
 });
