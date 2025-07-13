@@ -67,7 +67,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
   // Encode URL for WhatsApp
   const encodedMessage = encodeURIComponent(whatsappMessage);
-  const whatsappNumber = "081214827379"; // Updated WhatsApp number
+  const whatsappNumber = "085721933469"; // Updated WhatsApp number
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
   // Redirect to WhatsApp
