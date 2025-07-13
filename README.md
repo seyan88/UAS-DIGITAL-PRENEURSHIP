@@ -1,7 +1,3 @@
-Berikut adalah versi revisi konten kamu agar lebih **konsisten** dengan status brand *BikininAja* yang **baru dibangun**, sambil tetap terlihat profesional dan meyakinkan:
-
----
-
 # Jasa Pembuatan Website – **BikininAja** 💻
 
 Selamat datang di repositori [**BikininAja**](https://www.riauwebhost.com)! Kami adalah agensi digital kreatif yang hadir untuk membantu personal brand, UMKM, dan bisnis membangun eksistensi online secara profesional. Meskipun kami adalah brand baru, semangat kami besar dan kami siap menciptakan solusi digital yang relevan, modern, dan sesuai kebutuhan Anda. 🙌
